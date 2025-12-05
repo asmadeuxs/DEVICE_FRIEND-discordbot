@@ -1,12 +1,1 @@
-{
-  "1345595204207382558": {
-    "blacklistedNicknames": [],
-    "botPrefix": "if!",
-    "commandCooldown": 3000
-  },
-  "1440369745743577265": {
-    "blacklistedNicknames": ["everyone", "here"],
-    "botPrefix": "if!",
-    "commandCooldown": 3000
-  }
-}
+{}

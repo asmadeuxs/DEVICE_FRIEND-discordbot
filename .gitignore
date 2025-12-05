@@ -2,9 +2,9 @@
 .zed/
 logs/
 tests/
+#data/guildsettings.json
 bot.lua
 lit
 luvi
 luvit
-data/guildsettings.json
 gateway.json
