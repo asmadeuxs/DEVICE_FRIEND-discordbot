@@ -253,6 +253,11 @@ function commands.nicknameMe(msg, _)
       os.execute("sleep 5")
       reply:delete()
     end
+
+    if author:hasPermission("administrator") then
+      msg:reply("I CAN'T DO THAT TO YOU, BOSS, BUT HERE'S A RANDOM NAME I ROLLED! \"" .. tostring(randomName) .."\"!")
+      return
+    end
     local ok = author:setNickname(tostring(randomName))
     if ok then
       msg:reply("I CHANGED YOUR NAME TO \"" .. randomName .. "\" SINCE YOU ASKED SO NICELY!")
@@ -276,7 +281,7 @@ function commands.help(msg, _)
       fields = {
         {
           name = "nicknameMe",
-          value = "(SERVER-MAINLY, SUGGESTS IN DMS) I'LL ROLL A DICE AND DECIDE WHAT YOUR NICKNAME WILL BE!",
+          value = "(SERVER-MAINLY, SUGGESTS FOR ADMINS/IN DMS) I'LL ROLL A DICE AND DECIDE WHAT YOUR NICKNAME WILL BE!",
           inline = false
         },
         {

@@ -10,7 +10,11 @@ return {
           local random = table.pickrandom(REPLACE_NICKNAMES)
           local ok = member:setNickname(tostring(random))
           if ok then
-            print("Forbidden nickname detected for user " .. member.name .. ", the nickname will be set to " .. tostring(random) .. ".")
+            print(
+              "Guild \"" .. (member.guild.name or ("(UNKNOWN GUILD)")) .. "\" reported:\n" ..
+              "Forbidden nickname detected for user " .. (member.user.username or "(COULD NOT RETRIEVE @USERNAME)") ..
+              ", the nickname will be set to " .. tostring(random) .. "."
+            )
             member.user:send(
               "HEY, YOUR NICKNAME CONTAINS THE PROHIBITED TERM \"" .. prohibited ..
               "\" WHICH ISN'T ALLOWED IN \"" .. member.guild.name ..
