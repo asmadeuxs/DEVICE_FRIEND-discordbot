@@ -1,0 +1,10 @@
+.vscode/
+.zed/
+logs/
+tests/
+bot.lua
+lit
+luvi
+luvit
+data/guildsettings.json
+gateway.json
