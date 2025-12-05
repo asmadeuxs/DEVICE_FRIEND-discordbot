@@ -2,7 +2,7 @@
 .zed/
 logs/
 tests/
-#data/guildsettings.json
+data/guildsettings.json
 bot.lua
 lit
 luvi
